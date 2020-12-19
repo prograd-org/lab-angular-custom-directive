@@ -1,0 +1,8 @@
+<div>
+  <input type="radio" name="colors" (click)="color='blue'">blue 
+  <input type="radio" name="colors" (click)="color='orange'">orange
+  <input type="radio" name="colors" (click)="color='green'">green
+</div>
+
+
+<p [appColorchange]="color">{{message}}</p>
