@@ -1,8 +1,13 @@
-<div>
-  <input type="radio" name="colors" (click)="color='blue'">blue 
-  <input type="radio" name="colors" (click)="color='orange'">orange
-  <input type="radio" name="colors" (click)="color='green'">green
+<div class="container">
+  <div>
+    <input type="radio" name="colors" (click)="color='blue'">blue 
+    <input type="radio" name="colors" (click)="color='orange'">orange
+    <input type="radio" name="colors" (click)="color='green'">green
+  </div>
+  
+  
+  <p [appColorchange]="color">{{message}}</p>
+  <!-- <br> -->
+  <h6> custom attribute based directive which will change the color of the selected text on mouseover.</h6>
+
 </div>
-
-
-<p [appColorchange]="color">{{message}}</p>
